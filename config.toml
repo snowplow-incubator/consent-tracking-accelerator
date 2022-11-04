@@ -1,6 +1,6 @@
-title = "{{ACCELERATOR TEMPLATE}}"
-baseURL = "https://docs.snowplow.io/accelerators/{{YOUR BASE URL}}/"
+title = "Consent Accelerator"
+baseURL = "https://docs.snowplow.io/accelerators/consent/"
 
 [params]
-  description = "{{ACCELERATOR DESCRIPTION}}"
-  author = "{{AUTHOR NAMES}}"
+  description = "Enhanced Consent Plugin Accelerator"
+  author = "Jack Keene, Agnes Kiss, Peter Perlepes"
