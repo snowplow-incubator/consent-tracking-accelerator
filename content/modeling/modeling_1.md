@@ -53,7 +53,7 @@ dbt run -m snowplow_web.base --vars 'snowplow__start_date: <date_when_consent_tr
 ```
 This way only the base module is reprocessed. The web model's update logic will recognize the newly enabled models and backfilling should start between the date you defined within snowplow_start_date and the upper limit defined by the variable `snowplow_backfill_limit_days` that is set for the web model.
 
-Snowplow: New Snowplow incremental model. Backfilling
+`Snowplow: New Snowplow incremental model. Backfilling`
 
 You can overwrite this limit for this backfilling process temporarily while it lasts, if needed:
 
@@ -68,6 +68,6 @@ After this you should be able to see all consent models created and added to the
 ```dbt run --selector snowplow_web
 ```
 
-As soon as backfilling finishes, running the model results in both the web and the media player models being updated during the same run for the same period, both using the same latest set of data from the _base_events_this_run table. Please note that while the backfilling process lasts, no new web events are going to be processed.
+As soon as backfilling finishes, running the model results in both the web and the consent models being updated during the same run for the same period, both using the same latest set of data from the `_base_events_this_run` table. Please note that while the backfilling process lasts, no new web events are going to be processed.
 
 
