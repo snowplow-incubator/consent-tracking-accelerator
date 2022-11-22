@@ -6,7 +6,7 @@ weight = 1
 
 Streamlit uses Python to build shareable dashboards without the need for front-end development experience.
 
-Download the `streamlit-consent` template and copy the unzipped folder to your project directory to get started.
+Download the `streamlit-consent` template relevant to you data warehouse and copy the unzipped folder to your project directory to get started.
 
 {{% attachments style="blue" %}}
 {{% /attachments %}}
@@ -71,7 +71,7 @@ In case the dashboard does not load due to errors such as 'This session does not
 #### **Step 1:** Install requirements
 Run the command below to install the project requirements and run the virtual environment.
 
-❗❗ **This implementation has been tested with the following dependencies: *python = 3.9.13, streamlit = 1.13.0, snowflake-connector-python==2.7.9, pandas = *, plotly = 5.10.0*. If you run into package compatibility issues or encounter any errors try using them to build your own environment.**
+❗❗ **This implementation has been tested with the following dependencies: *python = 3.9.13, streamlit = 1.13.0, snowflake-connector-python = 2.7.9, pandas = *, plotly = 5.10.0*. If you run into package compatibility issues or encounter any errors try using them to build your own environment.**
 
 
 ```bash
