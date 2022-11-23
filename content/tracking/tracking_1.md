@@ -53,8 +53,6 @@ export const tracker = newTracker("sp", "{{Url for Collector}}", {
 });
 ```
 
-Now the tracker has everything required to start collecting consent preference data from consent management platform interactions. On the next step we are going to see how to use the available APIs.
-
 {{% /tab %}}
 {{% tab name="Script Tag" %}}
 
@@ -71,22 +69,8 @@ Add the below snippet to all of the pages you would like to use Snowplow trackin
 Place the `<script>` tag into the `<head>` element of your pages:
 
 ```html
-<script type="text/javascript" async="1">
-  (function (p, l, o, w, i, n, g) {
-    if (!p[i]) {
-      p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || [];
-      p.GlobalSnowplowNamespace.push(i);
-      p[i] = function () {
-        (p[i].q = p[i].q || []).push(arguments);
-      };
-      p[i].q = p[i].q || [];
-      n = l.createElement(o);
-      g = l.getElementsByTagName(o)[0];
-      n.async = 1;
-      n.src = w;
-      g.parentNode.insertBefore(n, g);
-    }
-  })(window, document, "script", "{{Link to sp.js file}}", "snowplow");
+<script type="text/javascript" async=1 >
+;(function (p, l, o, w, i, n, g) { if (!p[i]) { p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || []; p.GlobalSnowplowNamespace.push(i); p[i] = function () { (p[i].q = p[i].q || []).push(arguments) }; p[i].q = p[i].q || []; n = l.createElement(o); g = l.getElementsByTagName(o)[0]; n.async = 1; n.src = w; g.parentNode.insertBefore(n, g) } }(window, document, "script", "{{Link to sp.js file}}", "snowplow"));
 </script>
 ```
 
@@ -121,7 +105,7 @@ window.snowplow(
 );
 ```
 
-Now the tracker has everything required to start collecting consent preference data. On the next step we are going to see how to use the available APIs.
-
 {{% /tab %}}
 {{< /tabs >}}
+
+Now the tracker has everything required to start collecting consent preference data from consent management platform interactions. On the next step we are going to see how to use the API integrating with a real consent management platform.

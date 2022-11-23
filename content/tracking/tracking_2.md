@@ -1,11 +1,13 @@
 +++
-title = "Connect Snowplow to the consent management platform events"
+title = "Connect Snowplow to your CMP events"
 weight = 2
 +++
 
 To manage consent selection for your website visitors, most companies prefer to use products called consent management platforms. By using one of these products on your site, your users can read about the ways and purposes data are collected from your website and then accept, deny or configure which scopes they consent to and which they do not.
 
 There are many consent management platforms out there, which are excellent, and for this demonstration we are going to use [Cookiebot](https://www.cookiebot.com/). We are going to showcase how you can use Cookiebot methods to hook into consent preference selection programmatically and then send these data to Snowplow. Everything shown in this guide can be adjusted for any other consent management platform.
+
+<img src="../images/cookiebot.png" alt="Cookiebot" style="border-radius: 8px;" /> 
 
 #### Subscribe to consent selection events
 

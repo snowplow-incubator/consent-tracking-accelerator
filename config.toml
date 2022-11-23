@@ -4,3 +4,6 @@ baseURL = "https://docs.snowplow.io/accelerators/consent/"
 [params]
   description = "Enhanced Consent Plugin Accelerator"
   author = "Jack Keene, Agnes Kiss, Peter Perlepes"
+
+[markup.goldmark.renderer]
+  unsafe = true
