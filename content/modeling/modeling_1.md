@@ -57,15 +57,18 @@ This way only the base module is reprocessed. The web model's update logic will 
 
 You can overwrite this limit for this backfilling process temporarily while it lasts, if needed:
 
+```
 # dbt_project.yml
-...
+
 vars:
   snowplow_web:
     snowplow__backfill_limit_days: 1
+```
 
 After this you should be able to see all consent models created and added to the derived.snowplow_web_incremental_manifest table. Any subsequent run from this point onwards could be carried out using the recommended web model running method - using the snowplow_web selector.
 
-```dbt run --selector snowplow_web
+```
+dbt run --selector snowplow_web
 ```
 
 As soon as backfilling finishes, running the model results in both the web and the consent models being updated during the same run for the same period, both using the same latest set of data from the `_base_events_this_run` table. Please note that while the backfilling process lasts, no new web events are going to be processed.
