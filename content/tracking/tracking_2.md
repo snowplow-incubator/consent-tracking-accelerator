@@ -37,7 +37,7 @@ function trackConsent() {
   const availableScopes = Object.keys(window.Cookiebot.consent).filter(
     (key) => typeof window.Cookiebot.consent[key] === "boolean"
   );
-  const consentedScopes = availableScopes.filter(
+  const consentScopes = availableScopes.filter(
     (key) => window.Cookiebot.consent[key]
   );
 
@@ -45,21 +45,22 @@ function trackConsent() {
    * Build the enhanced consent object to send to Snowplow.
    */
   const enhancedConsent = {
-    consentedScopes,
+    consentScopes,
     basisForProcessing: "consent",
     consentUrl: "https://www.example.com/",
     consentVersion: "1.0",
     domainsApplied: ["https://www.example.com/"],
+    gdprApplies: window.Cookiebot.regulations.gdprApplies
   };
 
   /* If it is a selection and not a page load. */
   if (window.Cookiebot.changed) {
     /* Necessary cookies are always included. */
-    if (consentedScopes.length === 1) {
+    if (consentScopes.length === 1) {
       trackConsentDeny(enhancedConsent);
     } else if (
       /* Not all scopes are consented to. */
-      consentedScopes.length !== availableScopes.length
+      consentScopes.length !== availableScopes.length
     ) {
       trackConsentSelected(enhancedConsent);
     } else {
