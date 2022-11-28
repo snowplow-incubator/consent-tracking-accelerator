@@ -112,3 +112,15 @@ In case the dashboard does not load due to errors such as 'This session does not
 
 {{% /tab %}}
 {{< /tabs >}}
+
+You will be able to see an interactive dashboard similar to this:
+
+![healthcheck_board](../images/1_healthcheck_board.png?width=100pc)
+
+![changelog_board](../images/2_changelog_board.png?width=100pc)
+
+![general_lookup_board](../images/3_general_lookup_board.png?width=100pc)
+
+![consent_overview_by_users](../images/4_consent_overview_by_users.png?width=100pc)
+
+![cmp_board](../images/5_cmp_board.png?width=100pc)

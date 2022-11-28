@@ -23,3 +23,5 @@ Here you will learn to:
 
 - Data practitioners who would like to get familiar with the Snowplow enhanced-consent-plugin.
 - Data practitioners who want to learn how to use the snowplow-consent dbt package and set-up tracking using their companies website or single page application, to gain insight from their customers’ behavioural data as quickly as possible.
+
+!['logo-banner' ](images/streamlit_dashboard.png)
