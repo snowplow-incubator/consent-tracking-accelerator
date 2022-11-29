@@ -21,24 +21,8 @@ models:
         snowflake:
           enabled: "{{ target.type == 'snowflake' | as_bool() }}"
 ```
-#### **Step 2:** Configure variables
 
-Apart from the web package's usual variables assumed to have been configured already, the consent module comes with its own variables specified with a default value that you may need to overwrite in your own dbt project's `dbt_project.yml` file.
-
-- `snowplow__consent_scopes`: The latest list of consent scopes that is valid (in line with the latest consent version)
-- `snowplow__consent_late_arriving_buffer`: The minimum number of hours needed to pass since the consent event before processing. This should account for any late arriving data and is needed for the incremental update of snowplow_web_consent_users and snowplow_web_consent_versions.
-
-You can modify them according to your preference within your dbt project's `dbt_project.yml` similarly to the following illustration:
-
-```yml
-vars:
-  snowplow_web:
-    snowplow__consent_scopes: ['marketing', 'statistics', 'necessary']
-    snowplow__consent_late_arriving_buffer: 5
-```
-***
-
-#### **Step 3:** Run the package
+#### **Step 2:** Run the package
 
 If it is the first time you would like to process the snowplow_web package then you can run the package the recommended way either through your CLI or from within dbt Cloud with the following command:
 
