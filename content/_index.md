@@ -1,5 +1,5 @@
 +++
-title = "Snowplow Consent Accelerator"
+title = "Snowplow Consent Tracking Accelerator"
 menuTitle="Introduction"
 chapter = false
 weight = 1
