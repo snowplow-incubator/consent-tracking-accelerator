@@ -30,7 +30,7 @@ If this is your first time processing the snowplow_web package then you can run 
 dbt run --selector snowplow_web
 ```
 
-However, assuming that you already have a working snowplow_web package and you would like to enable consent tracking and modeling at a later stage, you do not need to rebuild the whole model from scratch. For the least amount of reprocessing impact execute the first run the following way:
+If you already have a working snowplow_web package and would like to enable the consent module you do not need to rebuild the whole model from scratch. For the least amount of reprocessing impact execute the first run the following way:
 
 ```
 dbt run -m snowplow_web.base --vars 'snowplow__start_date: <date_when_consent_tracking_starts>'
