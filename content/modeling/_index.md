@@ -18,6 +18,6 @@ flowchart LR
 
 {{</mermaid >}}
 
-To process raw events created by the Snowplow Enhanced Consent plugin we have included an optional module specifically dedicated to model such events in the [snowplow-web dbt package](https://hub.getdbt.com/snowplow/snowplow_web/latest/)
+To process raw events created by the Snowplow Enhanced Consent plugin we have included an optional module to model consent events in the [snowplow-web dbt package](https://hub.getdbt.com/snowplow/snowplow_web/latest/)
 
 In this chapter you will learn how to enable and run the consent module within the snowplow-web package.
