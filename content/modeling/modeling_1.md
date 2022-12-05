@@ -5,9 +5,9 @@ post = ""
 +++
 
 #### **Step 1:** Enable the optional consent module
-As the [advanced-analytics-for-web accelerator](https://docs.snowplow.io/accelerators/web/) is a prerequisite, it is assumed that you already have a dbt project set up to process basic web events.
+As the [advanced-analytics-for-web accelerator](https://docs.snowplow.io/accelerators/web/) is a prerequisite, it is assumed that you already have a dbt project set-up to process basic web events.
 
-To enable the optional consent module, add the following code snippet to your dbt_project.yml file:
+To enable the optional consent module, you must add the following code snippet to your dbt_project.yml file:
 
 
 ```yml

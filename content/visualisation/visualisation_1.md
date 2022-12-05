@@ -60,10 +60,6 @@ Run the command below to run the streamlit locally
 streamlit run Healthcheck_board.py
 ```
 
-{{% notice tip %}}
-If the dashboard does not load due to errors such as 'This session does not have a current database. Call 'USE DATABASE', or use a qualified name.' a possible workaround is to assign default ROLE to the Snowflake user that could handle this.'
-{{% /notice %}}
-
 {{% /tab %}}
 
 {{% tab name="Snowflake" %}}
