@@ -19,4 +19,4 @@ flowchart LR
 
 {{</mermaid >}}
 
-Use Streamlit to visualise your Snowplow data to make it easier to identify patterns and trends in your data.
+Use Streamlit to visualise your Snowplow data to view the current state of your user consent data```
