@@ -39,7 +39,7 @@ This way only the base module is reprocessed. The web model's update logic will 
 
 `Snowplow: New Snowplow incremental model. Backfilling`
 
-You can overwrite this limit for this backfilling process temporarily while it lasts, if needed:
+You can overwrite this limit for the backfilling process temporarily if needed:
 
 ```
 # dbt_project.yml
