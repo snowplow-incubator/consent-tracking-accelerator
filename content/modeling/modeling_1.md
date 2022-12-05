@@ -24,7 +24,7 @@ models:
 
 #### **Step 2:** Run the package
 
-If it is the first time you would like to process the snowplow_web package then you can run the package the recommended way either through your CLI or from within dbt Cloud with the following command:
+If this is your first time processing the snowplow_web package then you can run the package the recommended way either through your CLI or from within dbt Cloud with the following command:
 
 ```
 dbt run --selector snowplow_web
