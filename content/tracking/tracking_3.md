@@ -3,11 +3,9 @@ title = "Track consent banner visibility time"
 weight = 3
 +++
 
-Since consent management platform banners are an important part of a website's first experience and performance, Snowplow provides a way to track what we call `cmp visible time`, which is the timestamp of the banner becoming visible on the user's screen.
+Consent management platform banners are an important part of a website's first impression and performance. Snowplow provides a way to track what we call `cmp visible time`, which is the timestamp of the banner becoming visible on the user's screen.
 
-Tracking this time will allow you to detect issues and opportunities in user experience, web performance and consent preference selection.
-
-Some example questions which can be translated into actions bringing value back to the business:
+Tracking `cmp visible time` will allow you to detect issues and opportunities in user experience, web performance and consent preference selection and answer:
 
 - Does the time it takes for the consent banner to load, affect the consent preference selection ?
 - Do we observe higher bounce rates when the consent banner takes too long to load ?

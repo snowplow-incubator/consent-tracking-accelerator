@@ -3,11 +3,11 @@ title = "Connect Snowplow to your CMP events"
 weight = 2
 +++
 
-To manage consent selection for your website visitors, most companies prefer to use products called consent management platforms. By using one of these products on your site, your users can read about the ways and purposes data are collected from your website and then accept, deny or configure which scopes they consent to and which they do not.
+Most companies use consent management platforms to manage consent selection for their website visitors. A CMP allows users to understand how and why data is collected from a website and then accept, deny or configure which scopes they consent to.
 
-There are many consent management platforms out there, which are excellent, and for this demonstration we are going to use [Cookiebot](https://www.cookiebot.com/). We are going to showcase how you can use Cookiebot methods to hook into consent preference selection programmatically and then send these data to Snowplow. Everything shown in this guide can be adjusted for any other consent management platform.
+We will demonstrate how you can use [Cookiebot](https://www.cookiebot.com/) methods to hook into consent preference selection programmatically and send this data to Snowplow. Most CMPs have similar functionality so everything shown in this guide can be adjusted to suit your needs.
 
-<img src="../images/cookiebot.png" alt="Cookiebot" style="border-radius: 8px;" /> 
+<img src="../images/cookiebot.png" alt="Cookiebot" style="border-radius: 16px;" /> 
 
 #### Subscribe to consent selection events
 
@@ -117,4 +117,6 @@ function trackConsent() {
 
 {{< /tabs >}}
 
-_**Note:** The example above assumes that `partial consent` is when the visitor does not accept all the available scopes, but a selection of them. The use case for your application could as well be targeting the type of button that was pressed which reveals different intent. The API is designed to fit a variety of use-cases, you just need to add the code modified for your selected consent management platform._
+{{% notice info %}}
+The example above assumes that `partial consent` is when the visitor does not accept all the available scopes, but a selection of them. The use case for your application could as well be targeting the type of button that was pressed which reveals different intent. The API is designed to fit a variety of use-cases, you just need to add the code modified for your selected consent management platform.
+{{% /notice %}}

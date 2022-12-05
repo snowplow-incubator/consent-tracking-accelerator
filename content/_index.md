@@ -7,13 +7,13 @@ weight = 1
 
 ### Welcome to the Consent Tracking accelerator
 
-This accelerator will help you collect data from user interactions with your Consent Management Platform _(CMP)_ and their preferences, using the enhanced consent plugin from Snowplow.
+This accelerator will help you collect user interactions and preferences from your Consent Management Platform (CMP) using the enhanced consent plugin from Snowplow.
 
-Data collection and user consent has become a main concern when talking about product, personalisation, marketing and ML-driven actions. At the same time, CMPs can provide a limited and siloed amount of data about user preferences and individual selection.
+User consent for data collection is vital when talking about product, personalisation, marketing and ML-driven actions. CMPs provide a limited amount of data about user preferences but with the enhanced consent plugin this can become a rich source of information to understand consent in your business.
 
-By using Snowplow to collect consent preference, you can enrich your data model with user level, granular and context-rich selection data. Having user consent available in your central data store allows enriching your segments or ML models with this information and take action respectfully of a user's choices.
+By using Snowplow to collect consent preference data, you can enrich your data model with user level, granular and context-rich selection data. Having user consent data available in your central data store allows enriching your segments or ML models with this information and take action respectfully of a user's choices.
 
-Here you will learn to:
+Here you will learn how to:
 
 - Set-up Snowplow Consent Tracking on your CMP (_example using Cookiebot_)
 - Model your data using the Snowplow-Consent model
@@ -26,6 +26,8 @@ Here you will learn to:
 
 #### Prerequisites
 
+{{% notice tip %}} Complete our Advanced Analytics for Web accelerator if you don’t have any Snowplow modelled web data in your warehouse yet. You don’t need a working Snowplow pipeline, a sample events dataset is provided. {{% /notice %}}
+
 **Modeling and Visualisation**
 - dbt CLI installed or dbt Cloud account available
   - New dbt project created and configured
@@ -35,6 +37,7 @@ Here you will learn to:
 **Tracking and Enrichment**
 - Snowplow pipeline
 - Web app to implement tracking
+- CMP Set up
 
 {{% notice info %}}
 Please note that currently the data model supports Snowflake and BigQuery only. Further adapter support for this accelerator coming soon!

@@ -21,4 +21,4 @@ style id4 fill:#f5f5f5,stroke:#333,stroke-width:1px
 
 Get started with consent related events using the JavaScript tracker. The tracking API is made to be simple, understandable and feel familiar with other tracking solutions.
 
-Once set up, you will be able to setup consent preference tracking adjusted to your selected consent management platform (CMP).
+Once set-up, you will be able to setup consent preference tracking adjusted to your selected consent management platform (CMP).
