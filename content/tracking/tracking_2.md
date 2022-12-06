@@ -7,7 +7,8 @@ Most companies use consent management platforms to manage consent selection for 
 
 We will demonstrate how you can use [Cookiebot](https://www.cookiebot.com/) methods to hook into consent preference selection programmatically and send this data to Snowplow. Most CMPs have similar functionality so everything shown in this guide can be adjusted to suit your needs.
 
-<img src="../images/cookiebot.png" alt="Cookiebot" style="border-radius: 16px;" /> 
+![cookiebot](../images/cookiebot.png?width=50pc)
+
 
 #### Subscribe to consent selection events
 
