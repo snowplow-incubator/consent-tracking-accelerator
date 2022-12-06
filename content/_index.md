@@ -26,7 +26,9 @@ Here you will learn how to:
 
 #### Prerequisites
 
-{{% notice tip %}} Complete our Advanced Analytics for Web accelerator if you don’t have any Snowplow modelled web data in your warehouse yet. You don’t need a working Snowplow pipeline, a sample events dataset is provided. {{% /notice %}}
+{{% notice tip %}}
+Complete our [Advanced Analytics for Web](https://docs.snowplow.io/accelerators/web/) accelerator if you don't have any Snowplow modelled web data in your warehouse yet. You don't need a working Snowplow pipeline, a sample events dataset is provided.
+{{% /notice %}}
 
 **Modeling and Visualisation**
 - dbt CLI installed or dbt Cloud account available
