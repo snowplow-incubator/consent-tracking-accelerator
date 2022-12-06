@@ -24,6 +24,33 @@ Here you will learn how to:
 - Data practitioners who would like to get familiar with the Snowplow enhanced-consent-plugin.
 - Data practitioners who want to learn how to use the snowplow-consent dbt package and set-up tracking using their companies website or single page application, to gain insight from their customers’ behavioural data as quickly as possible.
 
+
+***
+
+#### What you will learn
+
+In approximately 5 working hours you can achieve the following:
+
+- **Track -** Set-up and deploy tracking to your website or single page application to allow consent tracking
+- **Model -** Enable and run the consent module within the snowplow-web data model
+- **Visualise -** Visualise the modeled data with Streamlit
+
+
+{{<mermaid>}}
+gantt
+        dateFormat  HH-mm
+        axisFormat %M
+        section 1. Track
+        3h          :track, 00-00, 3h
+        section 2. Model
+        1h          :model, after track, 1h
+        section 3. Visualise
+        1h          :visualise, after model, 1h
+
+{{</mermaid >}}
+
+***
+
 #### Prerequisites
 
 {{% notice tip %}}
