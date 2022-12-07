@@ -43,9 +43,9 @@ gantt
         section 1. Track
         3h          :track, 00-00, 3m
         section 2. Model
-        1h          :model, after track, 1h
+        1h          :model, after track, 1m
         section 3. Visualise
-        1h          :visualise, after model, 1h
+        1h          :visualise, after model, 1m
 
 {{</mermaid >}}
 
