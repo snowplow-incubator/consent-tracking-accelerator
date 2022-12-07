@@ -41,7 +41,7 @@ gantt
         dateFormat  HH-mm
         axisFormat %M
         section 1. Track
-        3h          :track, 00-00, 3h
+        3h          :track, 00-00, 3m
         section 2. Model
         1h          :model, after track, 1h
         section 3. Visualise
