@@ -8,9 +8,6 @@ Streamlit uses Python to build shareable dashboards without the need for front-e
 
 Download the `streamlit-consent` template relevant to you data warehouse and copy the unzipped folder to your project directory to get started.
 
-{{% attachments style="blue" %}}
-{{% /attachments %}}
-
 {{< tabs groupId="streamlit" >}}
 
 {{% tab name="BigQuery" %}}
