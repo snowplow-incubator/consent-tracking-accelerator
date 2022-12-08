@@ -57,4 +57,20 @@ dbt run --selector snowplow_web
 
 As soon as backfilling finishes, running the model results in both the web and the consent models being updated during the same run for the same period, both using the same latest set of data from the `_base_events_this_run` table. Please note that while the backfilling process lasts, no new web events are going to be processed.
 
+The following models will be generated:
+
+- **snowplow_web_consent_log**: Snowplow incremental table showing the audit trail of consent and Consent Management Platform (cmp) events
+
+- **snowplow_web_consent_users**: Incremental table of user consent tracking stats
+
+- **snowplow_web_consent_totals**: Summary of the latest consent status, per consent version
+
+- **snowplow_web_consent_scope_status**: Aggregate of current number of users consented to each consent scope
+
+- **snowplow_web_cmp_stats**: Used for modeling cmp_visible events and related metrics
+
+- **snowplow_web_consent_versions**: Incremental table used to keep track of each consent version and its validity
+
+
+
 
