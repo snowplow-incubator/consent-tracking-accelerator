@@ -13,4 +13,4 @@ PII (personally identifiable information) pseudonymization enrichment runs after
 
 It enables the users of Snowplow to better protect the privacy rights of data subjects, therefore aiding in compliance for regulatory measures.
 
-Full details of this enrichment are available in the <a href="https://docs.snowplow.io/docs/enriching-your-data/available-enrichments/pii-pseudonymization-enrichment/">Snowplow Documentation here</a>. 
+Full details of this enrichment are available in the <a href="https://docs.snowplow.io/docs/enriching-your-data/available-enrichments/pii-pseudonymization-enrichment/" target=_blank">Snowplow Documentation here</a>. 
