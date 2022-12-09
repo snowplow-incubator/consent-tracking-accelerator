@@ -32,6 +32,7 @@ Here you will learn how to:
 In approximately 5 working hours you can achieve the following:
 
 - **Track -** Set-up and deploy tracking to your website or single page application to allow consent tracking
+- **Enrich -** Add extra properties and values to your collected data
 - **Model -** Enable and run the consent module within the snowplow-web data model
 - **Visualise -** Visualise the modeled data with Streamlit
 
@@ -42,9 +43,11 @@ gantt
         axisFormat %M
         section 1. Track
         3h          :track, 00-00, 3m
-        section 2. Model
-        1h          :model, after track, 1m
-        section 3. Visualise
+        section 2. Enrich
+        1h         :enrich, after track 00-00, 1m
+        section 3. Model
+        1h          :model, after enrich, 1m
+        section 4. Visualise
         1h          :visualise, after model, 1m
 
 {{</mermaid >}}
