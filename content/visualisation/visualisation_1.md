@@ -13,7 +13,7 @@ Streamlit uses Python to build shareable dashboards without the need for front-e
 Run the command below to download the example dashboard:
 
 ```bash
-git clone --depth 1  --filter=blob:none --sparse https://github.com/snowplow-incubator/snowplow-accelerator-resources.git ; 
+git clone --depth 1  --filter=blob:none --sparse https://github.com/snowplow-incubator/snowplow-accelerator-resources.git ;
 cd snowplow-accelerator-resources
 git sparse-checkout set enhanced-consent-accelerator/bigquery/streamlit
 ```
@@ -70,7 +70,7 @@ streamlit run Healthcheck_board.py
 Run the command below to download the example dashboard:
 
 ```bash
-git clone --depth 1  --filter=blob:none --sparse https://github.com/snowplow-incubator/snowplow-accelerator-resources.git ; 
+git clone --depth 1  --filter=blob:none --sparse https://github.com/snowplow-incubator/snowplow-accelerator-resources.git ;
 cd snowplow-accelerator-resources
 git sparse-checkout set enhanced-consent-accelerator/snowflake/streamlit
 ```
