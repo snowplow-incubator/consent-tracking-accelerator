@@ -40,15 +40,15 @@ In approximately 5 working hours you can achieve the following:
 {{<mermaid>}}
 gantt
         dateFormat  HH-mm
-        axisFormat %M
+        axisFormat %H:%M
         section 1. Track
-        3h          :track, 00-00, 3m
+        3h          :track, 00-00, 3h
         section 2. Enrich
-        1h         :enrich, after track 00-00, 1m
+        1h         :enrich, after track 00-00, 1h
         section 3. Model
-        1h          :model, after enrich, 1m
+        1h          :model, after enrich, 1h
         section 4. Visualise
-        1h          :visualise, after model, 1m
+        1h          :visualise, after model, 1h
 
 {{</mermaid >}}
 
