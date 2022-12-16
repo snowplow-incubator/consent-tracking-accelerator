@@ -6,7 +6,7 @@ weight = 1
 +++
 
 ### Consent Tracking for Marketing accelerator
-#### Introduction:
+#### Introduction
 
 This accelerator will assist you in collecting user interactions and preferences from your Consent Management Platform (CMP) using Snowplow's enhanced consent plugin.
 
