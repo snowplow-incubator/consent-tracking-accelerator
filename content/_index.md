@@ -5,13 +5,15 @@ chapter = false
 weight = 1
 +++
 
-### Welcome to the Consent Tracking accelerator
+### Consent Tracking for Marketing accelerator
+#### Introduction
 
-This accelerator will help you collect user interactions and preferences from your Consent Management Platform (CMP) using the enhanced consent plugin from Snowplow.
+This accelerator will assist you in collecting user interactions and preferences from your Consent Management Platform (CMP) using Snowplow's enhanced consent plugin.
 
-User consent for data collection is vital when talking about product, personalisation, marketing and ML-driven actions. CMPs provide a limited amount of data about user preferences but with the enhanced consent plugin this can become a rich source of information to understand consent in your business.
+User consent for data collection is essential for personalization, marketing, and ML driven actions. While CMPs provide some data on user preferences, Snowplow's enhanced consent plugin allows you to gather more detailed information about user consent.
 
-By using Snowplow to collect consent preference data, you can enrich your data model with user level, granular and context-rich selection data. Having user consent data available in your central data store allows enriching your segments or ML models with this information and take action respectfully of a user's choices.
+By using Snowplow to collect consent preference data, you can enhance your data model with granular, context-rich selection data at the user level. Having access to user consent data in your data storage enables you to incorporate it into your segments or machine learning models and take action based on customer preferences.
+
 
 Here you will learn how to:
 
@@ -74,6 +76,22 @@ Complete our [Advanced Analytics for Web](https://docs.snowplow.io/accelerators/
 {{% notice info %}}
 Please note that currently the data model supports Snowflake and BigQuery only. Further adapter support for this accelerator coming soon!
 {{% /notice %}}
+
+***
+#### Model outputs
+
+- **snowplow_web_consent_log**: Snowplow incremental table showing the audit trail of consent and Consent Management Platform (cmp) events
+
+- **snowplow_web_consent_users**: Incremental table of user consent tracking stats
+
+- **snowplow_web_consent_totals**: Summary of the latest consent status, per consent version
+
+- **snowplow_web_consent_scope_status**: Aggregate of current number of users consented to each consent scope
+
+- **snowplow_web_cmp_stats**: Used for modeling cmp_visible events and related metrics
+
+- **snowplow_web_consent_versions**: Incremental table used to keep track of each consent version and its validity
+
 
 !['logo-banner' ](images/streamlit_dashboard.png)
 
