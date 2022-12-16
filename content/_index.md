@@ -8,11 +8,11 @@ weight = 1
 ### Consent Tracking for Marketing accelerator
 #### Introduction:
 
-This accelerator will guide you to collect user interactions and preferences from your Consent Management Platform (CMP) using the enhanced consent plugin from Snowplow.
+This accelerator will assist you in collecting user interactions and preferences from your Consent Management Platform (CMP) using Snowplow's enhanced consent plugin.
 
-User consent for data collection is vital when referring to product, personalisation, marketing and ML-driven actions. CMPs provide a limited amount of data on user preferences and with Snowplow's enhanced consent plugin this can become a rich source of information to understand the consent aspect regarding your business.
+User consent for data collection is essential for personalization, marketing, and ML driven actions. While CMPs provide some data on user preferences, Snowplow's enhanced consent plugin allows you to gather more detailed information about user consent.
 
-Using Snowplow to collect consent preference data, you can enrich your data model with user level, granular and context-rich selection data. Having user consent data available in your data storage allows enriching your segments or ML models with this information and take action based on your customer preferences.
+By using Snowplow to collect consent preference data, you can enhance your data model with granular, context-rich selection data at the user level. Having access to user consent data in your data storage enables you to incorporate it into your segments or machine learning models and take action based on customer preferences.
 
 
 Here you will learn how to:
