@@ -6,9 +6,6 @@ weight = 1
 
 Streamlit uses Python to build shareable dashboards without the need for front-end development experience.
 
-{{< tabs groupId="streamlit" >}}
-
-{{% tab name="BigQuery" %}}
 #### **Step 1:** Clone the repository
 Run the command below to download the example dashboard:
 
@@ -98,7 +95,6 @@ Run the command below to run the streamlit locally
 streamlit run Healthcheck_board.py
 ```
 
-{{% /tab %}}
 
 You will be able to see an interactive dashboard similar to this:
 
