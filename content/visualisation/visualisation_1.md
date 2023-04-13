@@ -91,7 +91,7 @@ For Databricks, we recommend setting up your credentials in a similar way to you
 # .streamlit/secrets.toml
 
 [databricks]
-databricks_server_hostname = "xxx
+databricks_server_hostname = "xxx"
 databricks_http_path = "xxx"
 databricks_token = "xxx"
 schema = "xxx" # This should point to your derived schema
