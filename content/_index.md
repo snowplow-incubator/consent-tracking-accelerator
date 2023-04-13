@@ -66,7 +66,7 @@ Complete our [Advanced Analytics for Web](https://docs.snowplow.io/accelerators/
 - dbt CLI installed or dbt Cloud account available
   - New dbt project created and configured
 - Python 3 Installed
-- Snowflake, BigQuery or Databricks account (apart from the Streamlit visualisatiion you should be able to follow along if you are on Redshift / Postgres as the data model supports those, too!)
+- Snowflake, BigQuery or Databricks account (apart from the Streamlit visualization you should be able to follow along if you are on Redshift / Postgres as the data model supports those, too!)
 
 **Tracking and Enrichment**
 - Snowplow pipeline
