@@ -5,31 +5,39 @@ post = ""
 +++
 
 #### **Step 1:** Enable the optional consent module
-As the [advanced-analytics-for-web accelerator](https://docs.snowplow.io/accelerators/web/) is a prerequisite, it is assumed that you already have a dbt project set-up to process basic web events.
+As the [advanced-analytics-for-web accelerator](https://docs.snowplow.io/accelerators/web/) is a prerequisite, it is assumed that you already have a dbt project set-up to process basic web events using the `snowplow_web` package.
 
-To enable the optional consent module, you must add the following code snippet to your dbt_project.yml file:
-
+To enable the optional consent module, simply set the `snowplow__enable_consent` variable to true:
 
 ```yml
-models:
+# dbt_project.yml
+vars:
   snowplow_web:
-    optional_modules:
-      consent:
-        enabled: true
-        +schema: "derived"
-        +tags: ["snowplow_web_incremental", "derived"]
-        scratch:
-          +schema: "scratch"
-          +tags: "scratch"
-          bigquery:
-            enabled: "{{ target.type == 'bigquery' | as_bool() }}"
-          databricks:
-            enabled: "{{ target.type in ['databricks', 'spark'] | as_bool() }}"
-          default:
-            enabled: "{{ target.type in ['redshift', 'postgres'] | as_bool() }}"
-          snowflake:
-            enabled: "{{ target.type == 'snowflake' | as_bool() }}"
+    snowplow__enable_consent: true
 ```
+
+> If you are using a version of `snowplow_web` prior to version 0.15.0, you need to set the following instead:
+>   
+>   ```yml
+>   models:
+>     snowplow_web:
+>       optional_modules:
+>         consent:
+>           enabled: true
+>           +schema: "derived"
+>           +tags: ["snowplow_web_incremental", "derived"]
+>           scratch:
+>             +schema: "scratch"
+>             +tags: "scratch"
+>             bigquery:
+>               enabled: "{{ target.type == 'bigquery' | as_bool() }}"
+>             databricks:
+>               enabled: "{{ target.type in ['databricks', 'spark'] | as_bool() }}"
+>             default:
+>               enabled: "{{ target.type in ['redshift', 'postgres'] | as_bool() }}"
+>             snowflake:
+>               enabled: "{{ target.type == 'snowflake' | as_bool() }}"
+>   ```
 
 #### **Step 2:** Run the package
 
@@ -79,7 +87,3 @@ The following models will be generated:
 - **snowplow_web_cmp_stats**: Used for modeling cmp_visible events and related metrics
 
 - **snowplow_web_consent_versions**: Incremental table used to keep track of each consent version and its validity
-
-
-
-

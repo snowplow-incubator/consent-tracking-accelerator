@@ -24,7 +24,7 @@ Here you will learn how to:
 #### Who is this guide for?
 
 - Data practitioners who would like to get familiar with the Snowplow enhanced-consent-plugin.
-- Data practitioners who want to learn how to use the snowplow-consent dbt package and set-up tracking using their companies website or single page application, to gain insight from their customers’ behavioural data as quickly as possible.
+- Data practitioners who want to learn how to use the snowplow-consent dbt package and set-up tracking using their companies website or single page application, to gain insight from their customers’ behavioral data as quickly as possible.
 
 
 ***
@@ -36,7 +36,7 @@ In approximately 5 working hours you can achieve the following:
 - **Track -** Set-up and deploy tracking to your website or single page application to allow consent tracking
 - **Enrich -** Add extra properties and values to your collected data
 - **Model -** Enable and run the consent module within the snowplow-web data model
-- **Visualise -** Visualise the modeled data with Streamlit
+- **Visualize -** Visualize the modeled data with Streamlit
 
 
 {{<mermaid>}}
@@ -49,8 +49,8 @@ gantt
         1h         :enrich, after track 00-00, 1h
         section 3. Model
         1h          :model, after enrich, 1h
-        section 4. Visualise
-        1h          :visualise, after model, 1h
+        section 4. Visualize
+        1h          :Visualize, after model, 1h
 
 {{</mermaid >}}
 
@@ -59,12 +59,12 @@ gantt
 #### Prerequisites
 
 {{% notice tip %}}
-Complete our [Advanced Analytics for Web](https://docs.snowplow.io/accelerators/web/) accelerator if you don't have any Snowplow modelled web data in your warehouse yet. You don't need a working Snowplow pipeline, a sample events dataset is provided.
+Complete our [Advanced Analytics for Web](https://docs.snowplow.io/accelerators/web/) accelerator if you don't have any Snowplow modeled web data in your warehouse yet. You don't need a working Snowplow pipeline, a sample events dataset is provided.
 {{% /notice %}}
 
-**Modeling and Visualisation**
-- dbt CLI installed or dbt Cloud account available
-  - New dbt project created and configured
+**Modeling and Visualization**
+- [dbt CLI](https://docs.getdbt.com/docs/core/installation) installed or [dbt Cloud](https://docs.getdbt.com/docs/cloud/about-cloud-setup) account available
+  - New dbt [project](https://docs.getdbt.com/docs/build/projects) created and configured
 - Python 3 Installed
 - Snowflake, BigQuery or Databricks account (apart from the Streamlit visualization you should be able to follow along if you are on Redshift / Postgres as the data model supports those, too!)
 
@@ -91,5 +91,3 @@ Complete our [Advanced Analytics for Web](https://docs.snowplow.io/accelerators/
 
 
 !['logo-banner' ](images/streamlit_dashboard.png)
-
-
