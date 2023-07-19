@@ -1,5 +1,5 @@
 +++
-title = "Visualisation"
+title = "Visualization"
 chapter = true
 weight = 5
 pre = "4. "
@@ -8,11 +8,11 @@ post = ""
 
 <!-- ### Chapter 3 -->
 
-# Visualisation
+# Visualization
 
 {{<mermaid>}}
 flowchart LR
-    id1(Track)-->id2(Enrich)-->id3(Model)-->id4(Visualise)
+    id1(Track)-->id2(Enrich)-->id3(Model)-->id4(Visualize)
     style id1 fill:#f5f5f5,stroke:#333,stroke-width:1px
     style id2 fill:#f5f5f5,stroke:#333,stroke-width:1px
     style id3 fill:#f5f5f5,stroke:#333,stroke-width:1px
@@ -20,4 +20,4 @@ flowchart LR
 
 {{</mermaid >}}
 
-Use Streamlit to visualise your Snowplow data to view the current state of your user consent data
+Use Streamlit to Visualize your Snowplow data to view the current state of your user consent data
